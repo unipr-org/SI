@@ -1,6 +1,6 @@
-# CS - CyberSecurity
+# SI - Sicurezza Informatica
 
-CS - Sicurezza Informatica presso l'Università degli Studi di Parma (6 CFU).
+SI - Sicurezza Informatica presso l'Università degli Studi di Parma (6 CFU).
 
 ```bash
 Guida directory:
@@ -59,6 +59,6 @@ Il titolo della pull request sarà: `"Appunti lezione 26-02-2023"`.
 
 ## Contributors
 
-<a href="https://github.com/unipr-org/CS/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=unipr-org/CS" />
+<a href="https://github.com/unipr-org/SI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=unipr-org/SI" />
 </a>
