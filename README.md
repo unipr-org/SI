@@ -5,8 +5,6 @@ SI - Sicurezza Informatica presso l'Università degli Studi di Parma (6 CFU).
 ```bash
 Guida directory:
 .
-├── esercizi
-├── pdf
 └── slides
 ```
 
