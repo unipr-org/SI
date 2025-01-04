@@ -147,3 +147,65 @@ Nomenclatura OSINT:
 - Wayback Machine: progetto con lo scopo di archiviare e rendere disponibili pagine web e le loro modifiche nel tempo.
 - FOCA (Fingerprinting Organizations with Collected Archives): strumento utilizzato principalmente per trovare i metadati e le informazioni nascoste nei documenti esaminati.
 - MALTEGO: software che offre la possibilità di raccogliere informazioni tramite la consultazione di dati pubblicamente accessibili e raggrupparle, in formato grafico, attraverso l’utilizzo di trasformazioni.
+
+---
+
+# Autodifesa
+
+## Deep Web vs Dark Web
+Il **Deep Web** comprende tutte le informazioni e i contenuti che non sono indicizzati dai motori di ricerca tradizionali, come Google o Bing.  
+Questi motori utilizzano spider, strumenti automatizzati per scansionare il web e raccogliere i contenuti delle pagine. Tuttavia, alcuni fattori possono impedire agli spider di accedere e indicizzare determinati contenuti, tra cui:
+
+- Blocchi di sicurezza.  
+- Codici corrotti o mal configurati.  
+- Configurazioni speciali (ad esempio file `.htaccess`).  
+- Protezioni tramite password.  
+
+Rientrano in questa categoria:
+- Siti web di nuova creazione non ancora indicizzati.  
+- Pagine web con contenuti dinamici.  
+- Applicazioni web.  
+- Siti privati aziendali.
+
+Il **Dark Web** è un sottoinsieme del Deep Web, accessibile esclusivamente tramite software specifici che fungono da ponte tra Internet e le reti anonime, note come **DarkNet**.
+
+Le darknet più comuni:
+- **Tor**: uno dei più famosi, fornisce accesso alla rete Tor e garantisce l'anonimato degli utenti, consentendo loro di navigare sia sul Dark Web che sul normale World Wide Web in modo anonimo.  
+- **I2P**: progettata per comunicazioni anonime tra utenti.  
+- **Freenet**: focalizzata sulla condivisione sicura e anonima di file.
+
+## By Design e By Default
+Per **dato personale** si intende qualunque informazione relativa a persona fisica, persona giuridica, ente o associazione, identificati o identificabili, anche indirettamente, mediante riferimento a qualsiasi altra informazione, ivi compreso un numero di identificazione personale. Si considera tale il dato oggettivo, ma anche il dato valutativo.
+
+Il **GDPR** introduce due approcci obbligatori per il trattamento dei dati personali: **By Design** e **By Default**.
+
+**By Design**: significa analizzare il trattamento dei dati lungo tutto il loro ciclo di vita.  
+L’obiettivo è tutelare i diritti dell’interessato fin dalla fase di progettazione e durante tutta la gestione dei dati, adottando misure tecniche e organizzative, come:
+- **Minimizzazione dei dati**: raccogliere solo i dati strettamente necessari.  
+- **Pseudonimizzazione**: separare i dati personali dall’identità dell’interessato per ridurre il rischio di accesso non autorizzato.
+
+**By Default**: prevede di adottare configurazioni inizialmente “chiuse” per i sistemi informatici, ampliandole solo dopo una valutazione attenta dell’impatto di eventuali aperture.  
+Le impostazioni predefinite devono garantire la massima protezione della privacy, affinché:
+- I dati personali siano accessibili solo a chi è autorizzato.  
+- Non vengano resi accessibili a un numero indefinito di persone senza esplicito intervento umano.
+
+## Data breach
+Con il termine **data breach** si intende un incidente di sicurezza in cui dati sensibili, protetti o riservati vengono consultati, copiati, trasmessi, rubati o utilizzati da un soggetto non autorizzato. Solitamente il data breach si realizza con una divulgazione di dati riservati o confidenziali all’interno di un ambiente privo di misure di sicurezze (da esempio, su web) in maniera involontaria o volontaria. Tale divulgazione può avvenire in seguito a:
+- Perdita accidentale: ad esempio, data breach causato da smarrimento di una chiavetta USB contenente dati riservati.
+- Furto: ad esempio, data breach causato da furto di un notebook contenente dati confidenziali.
+- Infedeltà aziendale: ad esempio, data breach causato da una persona interna che avendo autorizzazione ad accedere ai dati ne produce una copia distribuita in ambiente pubblico.
+- Accesso abusivo: ad esempio, data breach causato da un accesso non autorizzato ai sistemi informatici con successiva divulgazione delle informazioni acquisite.
+
+## Cancellazione di file e Slack Space
+Quando viene cancellato un file, viene solo messo un flag (l'operazione effettiva varia in base al file system) per indicare che il file è "deleted". I cluster utilizzati dal file cancellato vengono resi nuovamente disponibili per altri file.
+L'operazione di cancellazione di un file **non ripulisce i cluster** del loro contenuto, permettendo così il recupero dei file cancellati se non sono stati **sovrascritti**.
+Se il contenuto di un file non riempie completamente un cluster, possono rimanere parti del file che occupava precedentemente quel cluster. Questo spazio residuo viene chiamato **Slack Space**.
+
+## Antiforensics
+La cifratura è un ottimo metodo di Antiforensics. Esistono anche altre tipologie di Antiforensics come la **steganografia** e la **cancellazione sicura dei file**.
+
+Il termine **steganografia** deriva dal greco, e il suo significato letterale è "scrittura nascosta". E’ differente dalla crittografia in quanto, la steganografia nasconde un’informazione (l’esistenza di una informazione), mentre la crittografia la cifra (nasconde il contenuto dell’informazione). Le due tecniche possono essere abbinate e sono complementari. Utilizzando la crittografia vediamo il messaggio, ma cifrato, mentre l’obiettivo della steganografia è di nascondere un qualcosa (messaggio) all’interno di un contenitore noto. Per tecnica steganografica quindi si intende quel processo di occultamento di un’ informazione. (Camouflage)
+
+## Digital Forensics
+La **Digital Forensics** è la scienza che studia come ottenere, preservare, analizzare e documentare le evidenze digitali (prove) dai dispositivi elettronici come: Tablet PC, Server, PDA, fax machine, digital camera, iPod, Smartphone (Mobile Forensics) e tutti gli altri dispositivi di memorizzazione.
+Una **digital evidence** può essere definita come qualsiasi informazione avente valore probatorio che sia memorizzata o trasmessa in forma digitale.
