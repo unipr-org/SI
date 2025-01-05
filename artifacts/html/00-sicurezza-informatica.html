@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<title>00-sicurezza-informatica</title>
+		<style>
+			/* PDF Specific */
+
+@media print {
+  body {
+    min-width: initial;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* General */
+
+.octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.anchor:focus {
+  outline: none;
+}
+
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+  text-decoration: none;
+}
+
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+h1:hover .anchor .octicon-link:before,
+h2:hover .anchor .octicon-link:before,
+h3:hover .anchor .octicon-link:before,
+h4:hover .anchor .octicon-link:before,
+h5:hover .anchor .octicon-link:before,
+h6:hover .anchor .octicon-link:before {
+  width: 16px;
+  height: 16px;
+  content: ' ';
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-print-color-adjust: exact;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #24292e;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 1rem auto;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+a {
+  background-color: initial;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+img {
+  border-style: none;
+}
+
+code,
+kbd,
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+input {
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  overflow: visible;
+}
+
+[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+hr:after,
+hr:before {
+  display: table;
+  content: '';
+}
+
+hr:after {
+  clear: both;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+details summary {
+  cursor: pointer;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ol ol ol,
+ol ul ol,
+ul ol ol,
+ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+dd {
+  margin-left: 0;
+}
+
+code,
+pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 12px;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+:checked + .radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.border {
+  border: 1px solid #e1e4e8 !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e1e4e8 !important;
+}
+
+.rounded-1 {
+  border-radius: 3px !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-gray-light {
+  background-color: #fafbfc !important;
+}
+
+.text-gray-light {
+  color: #6a737d !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.my-2 {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pl-1 {
+  padding-left: 4px !important;
+}
+
+.pl-2 {
+  padding-left: 8px !important;
+}
+
+.py-2 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.pl-3,
+.px-3 {
+  padding-left: 16px !important;
+}
+
+.px-3 {
+  padding-right: 16px !important;
+}
+
+.pl-4 {
+  padding-left: 24px !important;
+}
+
+.pl-5 {
+  padding-left: 32px !important;
+}
+
+.pl-6 {
+  padding-left: 40px !important;
+}
+
+.f6 {
+  font-size: 12px !important;
+}
+
+.lh-condensed {
+  line-height: 1.25 !important;
+}
+
+.text-bold {
+  font-weight: 600 !important;
+}
+
+.pl-c {
+  color: #6a737d;
+}
+
+.pl-c1,
+.pl-s .pl-v {
+  color: #005cc5;
+}
+
+.pl-e,
+.pl-en {
+  color: #6f42c1;
+}
+
+.pl-s .pl-s1,
+.pl-smi {
+  color: #24292e;
+}
+
+.pl-ent {
+  color: #22863a;
+}
+
+.pl-k {
+  color: #d73a49;
+}
+
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.pl-smw,
+.pl-v {
+  color: #e36209;
+}
+
+.pl-bu {
+  color: #b31d28;
+}
+
+.pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+.pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+.pl-c2:before {
+  content: '^M';
+}
+
+.pl-sr .pl-cce {
+  font-weight: 700;
+  color: #22863a;
+}
+
+.pl-ml {
+  color: #735c0f;
+}
+
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+  font-weight: 700;
+  color: #005cc5;
+}
+
+.pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+.pl-mb {
+  font-weight: 700;
+  color: #24292e;
+}
+
+.pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+.pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+.pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+.pl-mdr {
+  font-weight: 700;
+  color: #6f42c1;
+}
+
+.pl-ba {
+  color: #586069;
+}
+
+.pl-sg {
+  color: #959da5;
+}
+
+.pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.my-2 {
+  margin-bottom: 8px !important;
+}
+
+.my-2 {
+  margin-top: 8px !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pl-1 {
+  padding-left: 4px !important;
+}
+
+.pl-2 {
+  padding-left: 8px !important;
+}
+
+.py-2 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.pl-3 {
+  padding-left: 16px !important;
+}
+
+.pl-4 {
+  padding-left: 24px !important;
+}
+
+.pl-5 {
+  padding-left: 32px !important;
+}
+
+.pl-6 {
+  padding-left: 40px !important;
+}
+
+.pl-7 {
+  padding-left: 48px !important;
+}
+
+.pl-8 {
+  padding-left: 64px !important;
+}
+
+.pl-9 {
+  padding-left: 80px !important;
+}
+
+.pl-10 {
+  padding-left: 96px !important;
+}
+
+.pl-11 {
+  padding-left: 112px !important;
+}
+
+.pl-12 {
+  padding-left: 128px !important;
+}
+
+hr {
+  border-bottom-color: #eee;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+body:after,
+body:before {
+  display: table;
+  content: '';
+}
+
+body:after {
+  clear: both;
+}
+
+body > :first-child {
+  margin-top: 0 !important;
+}
+
+body > :last-child {
+  margin-bottom: 0 !important;
+}
+
+a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+blockquote,
+details,
+dl,
+ol,
+p,
+pre,
+table,
+ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaecef;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.875em;
+}
+
+h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+ol,
+ul {
+  padding-left: 2em;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  word-wrap: break-all;
+}
+
+li > p {
+  margin-top: 16px;
+}
+
+li + li {
+  margin-top: 0.25em;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+table th {
+  font-weight: 600;
+}
+
+table td,
+table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+img {
+  max-width: 80%;
+  box-sizing: initial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+}
+
+pre {
+  word-wrap: normal;
+}
+
+pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  -webkit-print-color-adjust: exact;
+  background: #f8f8f8;
+}
+
+.hljs pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.hljs pre,
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  -webkit-print-color-adjust: exact;
+
+  border-radius: 3px;
+}
+
+pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+.commit-tease-sha {
+  display: inline-block;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 90%;
+  color: #444d56;
+}
+
+.full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+.blob-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.blob-num {
+  width: 1%;
+  min-width: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(27, 31, 35, 0.3);
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.blob-num:hover {
+  color: rgba(27, 31, 35, 0.6);
+}
+
+.blob-num:before {
+  content: attr(data-line-number);
+}
+
+.blob-code {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.blob-code-inner {
+  overflow: visible;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 12px;
+  color: #24292e;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+.pl-token.active,
+.pl-token:hover {
+  cursor: pointer;
+  background: #ffea7f;
+}
+
+.tab-size[data-tab-size='1'] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.tab-size[data-tab-size='2'] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.tab-size[data-tab-size='3'] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.tab-size[data-tab-size='4'] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.tab-size[data-tab-size='5'] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.tab-size[data-tab-size='6'] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.tab-size[data-tab-size='7'] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.tab-size[data-tab-size='8'] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.tab-size[data-tab-size='9'] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.tab-size[data-tab-size='10'] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.tab-size[data-tab-size='11'] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.tab-size[data-tab-size='12'] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.task-list-item {
+  list-style-type: none;
+}
+
+.task-list-item + .task-list-item {
+  margin-top: 3px;
+}
+
+.task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+/*
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+  
+  .hljs-comment,
+  .hljs-quote {
+    color: #998;
+    font-style: italic;
+  }
+  
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-subst {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .hljs-number,
+  .hljs-literal,
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-tag .hljs-attr {
+    color: #008080;
+  }
+  
+  .hljs-string,
+  .hljs-doctag {
+    color: #d14;
+  }
+  
+  .hljs-title,
+  .hljs-section,
+  .hljs-selector-id {
+    color: #900;
+    font-weight: bold;
+  }
+  
+  .hljs-subst {
+    font-weight: normal;
+  }
+  
+  .hljs-type,
+  .hljs-class .hljs-title {
+    color: #458;
+    font-weight: bold;
+  }
+  
+  .hljs-tag,
+  .hljs-name,
+  .hljs-attribute {
+    color: #000080;
+    font-weight: normal;
+  }
+  
+  .hljs-regexp,
+  .hljs-link {
+    color: #009926;
+  }
+  
+  .hljs-symbol,
+  .hljs-bullet {
+    color: #990073;
+  }
+  
+  .hljs-built_in,
+  .hljs-builtin-name {
+    color: #0086b3;
+  }
+  
+  .hljs-meta {
+    color: #999;
+    font-weight: bold;
+  }
+  
+  .hljs-deletion {
+    background: #fdd;
+  }
+  
+  .hljs-addition {
+    background: #dfd;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }
+  
+  .hljs-strong {
+    font-weight: bold;
+  }
+		</style>
+<script> MathJax = { tex: { inlineMath: [["$", "$"]] } }; </script>
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	</head>
+	<body>
+		<nav id="table-of-contents">
+			
+		</nav>
+		<main>
+			<p>style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console</p>
+<pre><code>---
+
+# Sicurezza informatica
+Con il termine Cybercrime si intende l'esecuzione di crimini, mediante l'ausilio di mezzi informatici e di telecomunicazione, con lo scopo di acquisire illegalmente informazioni e di tramutarle in denaro.
+
+Nomenclatura:
+- **AV**: Antivirus.
+- **Carder**: Termine slang usato per descrivere individui che utilizzano informazioni rubate di conti di carte di credito per effettuare transazioni fraudolente.  
+- **Carding**: Traffico e uso fraudolento di informazioni rubate di conti di carte di credito.  
+- **Cashing**: Atto di ottenere denaro commettendo frodi. Questo può avvenire in diversi modi, ad esempio incassando bonifici Western Union, ordini di pagamento postali, o fondi su WebMoney; utilizzando dati della banda magnetica con PIN per prelievi da bancomat o account PayPal; oppure aprendo un conto bancario con un documento falso per prelevare denaro da un conto di carta di credito.  
+- **CC**: Slang per "carta di credito".  
+- **Change of Billing (COB o COBs)**: Atto di cambiare l'indirizzo di fatturazione di un conto di credito per farlo corrispondere a un punto di smistamento postale. Questo permette al carder di avere il pieno controllo del conto compromesso e aumenta la probabilità che il conto non venga rifiutato durante transazioni online.  
+- **CVV2**: Codice di sicurezza della carta di credito. Visa, MasterCard e Discover richiedono questo codice, che è un numero di 3 cifre sul retro della carta.  
+- **DDoS**: Acronimo per "Distributed Denial of Service Attack". L'obiettivo di un attacco DDoS è bloccare un sito web bersaglio, almeno temporaneamente, sovraccaricandolo di traffico.  
+- **DLs**: Slang per patenti di guida false o di fantasia.  
+- **Drop**: Intermediario utilizzato per nascondere la fonte di una transazione (indirizzi, telefoni, ecc.).  
+- **Dumps**: Informazioni copiate di carte di pagamento, almeno i dati della traccia 1, ma solitamente sia della traccia 1 che della traccia 2.  
+- **Dump checking**: Utilizzo di software specifici o la codifica dei dati della traccia su una carta di plastica per testare se il dump è approvato o rifiutato. Questo dà ai carder maggiore sicurezza sulla qualità dei dump e sulla loro accettazione nei negozi.  
+- **Full info(s)**: Termine che descrive il possesso di indirizzi, numeri di telefono, numeri di previdenza sociale, PIN, report creditizi, e così via. Le "Full Info(s)" sono usate dai carder per prendere il controllo dell'identità di una persona o per venderla.  
+- **Holos**: Slang per "ologrammi". Gli ologrammi sono importanti per chi realizza carte di credito false per imitare una caratteristica di sicurezza esistente.  
+- **ICQ**: Abbreviazione di "I Seek You". ICQ è il sistema di messaggistica istantanea più usato dai carder, soprattutto nella cultura Internet dell'Europa dell'Est.  
+- **IRC**: Abbreviazione di "Internet Relay Chat". IRC è un sistema globale di server che consente chat testuali in tempo reale, scambio di file e altre interazioni.  
+- **IDs**: Slang per documenti di identità. I carder commercializzano una varietà di documenti, tra cui bollette, diplomi, patenti di guida, passaporti o qualsiasi cosa utilizzabile come documento di identità.  
+- **MSR (Magnetic Strip Reader)**: Dispositivo usato per copiare informazioni di carte di pagamento e/o per codificare informazioni della banda magnetica su carte di plastica.  
+- **Phishing**: Estrazione di informazioni da un obiettivo utilizzando un "amo" (solitamente un'email che si spaccia per una comunicazione ufficiale). I phisher inviano email di massa per ottenere dati da utilizzare a scopi fraudolenti.  
+- **POS (Point of Sale)**: Terminale attraverso cui si strisciano le carte di credito per comunicare con i processori che approvano o rifiutano le transazioni.  
+- **Proxies**: Server proxy utilizzati per mascherare l'identità su Internet. I carder usano ampiamente proxy, socks, http, https, e VPN (Virtual Private Networks) per nascondere il proprio indirizzo IP durante attività fraudolente online.  
+- **Track 1/Track 2 data**: Informazioni memorizzate sulla banda magnetica di una carta di pagamento che contengono i dati del conto.
+
+## Hat
+- **Black-hat**: Hacker che violano i sistemi informatici per scopi personali o criminali. Rubano informazioni e spesso le rivendono a paesi stranieri. Agiscono deliberatamente sul “lato oscuro” dell'hacking.
+- **Grey-hat**: Hacker che non si identificano né come black-hat né come white-hat. Possono aver commesso intrusioni in passato ma scelgono di non perseguire attività criminali.
+- **White-hat**: Hacker “etici” con le competenze dei black-hat, ma che collaborano con autorità e aziende per combattere i crimini informatici. Non violano sistemi per scopi illeciti o economici.
+
+## Hacker's Profiling Project (HPP)
+
+| **ID dell'attaccante**              | **Hacker solitario / di gruppo**           | **Obiettivo**                     | **Motivazioni / Scopi**                                                             |
+| ----------------------------------- | ------------------------------------------ | --------------------------------- | ----------------------------------------------------------------------------------- |
+| **Wanna Be Lamer**                  | GRUPPO                                     | Utente finale                     | Per moda, è "figo" =&gt; per vantarsi e mettersi in mostra                             |
+| **Script Kiddie**                   | GRUPPO: ma agiscono da soli                | PMI / Vulnerabilità specifiche    | Per sfogare la loro rabbia / attirare l'attenzione dei media                        |
+| **Cracker**                         | SOLITARIO                                  | Aziende                           | Per dimostrare il loro potere / attirare l'attenzione dei media                     |
+| **Ethical Hacker**                  | SOLITARIO / GRUPPO (solo per divertimento) | Fornitori / Tecnologia            | Per curiosità (per imparare) e scopi altruistici                                    |
+| **Quiet, Paranoid, Skilled Hacker** | SOLITARIO                                  | Su necessità                      | Per curiosità (per imparare) =&gt; scopi egoistici                                     |
+| **Cyber-Warrior**                   | SOLITARIO                                  | Aziende "simbolo" / Utenti finali | Per profitto                                                                        |
+| **Industrial Spy**                  | SOLITARIO                                  | Aziende / Corporazioni            | Per profitto                                                                        |
+| **Government Agent**                | SOLITARIO / GRUPPO                         | Governo / Terroristi sospetti   | Spionaggio / Controspionaggio / Test di vulnerabilità / Monitoraggio delle attività |
+| **Military Hacker**                 | SOLITARIO / GRUPPO                         | Governo / Aziende strategiche     | Monitoraggio / controllo / sabotaggio di sistemi                                    |
+
+## Fasi del cybercrime
+Attori principali:
+- **Hackers**: eseguono attacchi informatici.
+- **Command**: coordinano le operazioni.
+- **E-launderers**: gestiscono il riciclaggio dei guadagni illeciti.
+
+ Fasi operative:
+1. **Fase 1**:
+   - Eseguire attacchi informatici.
+   - Sviluppare malware.
+   - Creare botnet.
+
+2. **Fase 2**:
+   - Furto di identità (ID-theft).
+   - Raccolta di informazioni personali.
+   - Raccolta di informazioni finanziarie.
+
+3. **Fase 3**:
+   - Commettere crimini elettronici (e-crimes).
+   - Operazioni bancarie online (e-banking).
+   - E-commerce illecito.
+
+4. **Fase 4**:
+   - Ottenere i proventi.
+   - Creare una rete per il riciclaggio online (e-laundering).
+   - Trasferire guadagni illeciti.
+
+Economia sommersa:
+- **Attività principali**:
+  - Commercio di beni rubati.
+  - Scambio di informazioni rubate, malware, strumenti, competenze e abilità
+
+---
+
+# OSINT
+L'**O**pen **S**ource **INT**elligence consiste nella ricerca di informazioni tratte da fonti liberamente disponibili e si differenzia dalle altre attività di Intelligence in quanto le informazioni non sono ottenute "illegalmente".
+
+Esistono quattro distinte categorie di *open source information and intelligence*:
+- Open Source Data (OSD): "I dati sono la stampa grezza, la trasmissione, il debriefing orale o altre forme di informazioni da una fonte primaria".
+- Open Source Information (OSI): "OSI è composto dai dati grezzi che possono essere messi insieme, generalmente da un processo editoriale che fornisce un po' di filtraggio e convalida, nonché la gestione delle presentazioni".
+- Open Source Intelligence (OSINT): "OSINT è un'informazione che è stata deliberatamente scoperta, discriminata, distillata e diffusa a un pubblico selezionato, generalmente il comandante e il suo personale diretto, al fine di rispondere a una domanda specifica".
+- Validated OSINT (OSINT-V): "OSINT-V è un'informazione a cui può essere attribuito un altissimo grado di certezza. Può essere prodotto solo da un professionista dell'intelligence di tutte le fonti, con accesso a fonti di intelligence classificate, ecc.".
+
+In ambito militare, l'OSINT consiste nella "raccolta, selezione, distillazione e diffusione di informazioni non classificate ad una comunità ristretta ed in relazione a specifici argomenti".
+
+Le informazioni recuperabili tramite OSINT non sono utilizzabili soltanto per fini "negativi": possono essere utilmente impiegate per supportare decisioni strategiche, valutare campagne di marketing, verificare il "sentiment" e la reputazione online, migliorare la sicurezza dell'organizzazione, ecc.
+
+&gt; Esempi di OSINT: password visibili nelle dirette TV.
+
+I problemi dell'OSINT sono le barriere culturali, la disinformazione delle notizie (fake, manipolate, ecc.), troppa fiducia nei tools automatici, Cognitive BIAS (pattern sistematico di deviazione dalla norma o dalla razionalità nel giudizio), traffico (generata una grande quantità di traffico che può essere sospetta).
+
+L'immagine sottostante elenca e suddivide il mercato globale dell'OSINT per segmenti.
+
+![01.png](images/01.png)
+
+## Modalità di fare OSINT
+Esistono tre modalità per fare OSINT:
+- Manuale: la ricerca viene effettuata direttamente dall'operatore. Le scelte vengono fatte sul momento; raccolta e confronto oneroso, difficilmente scalabile ed elevato rischio di perdere informazioni; qualità del dato e validazione analista su molteplici basi di dati.
+- Automatica: la ricerca viene effettuata tramite strumenti parametrizzabili. Deve essere effettuata una scrematura a posteriori; potenzialmente molto efficace, facilmente scalabile ed integrabile, richiede enormi investimenti (HW e SW); rischio di falsi positivi dovuti ad AI non evoluta come analista.
+- Mix: utilizzo di operazioni automatiche e manuali validate ed analizzate dall'occhio critico dell'analista. Benefici dall'uso di tecniche automatiche per l'individuazione o la connessione di dati, parte critica e di eliminazione del rumore da parte dell'analista
+
+## Fasi di OSINT
+L'attività OSINT si divide in cinque fasi:
+1. Planning &amp; Direction: definisco obiettivi e fonti.
+2. Collection: raccolgo i dati dalle fonti identificate nella fase 1.
+3. Analysis &amp; Collation: analizzo e confronto i dati raccolti.
+4. Dissemination: diffusione dei report contenenti i dati precedentemente raccolti e rielaborati.
+5. Feedback: misuro il gradimento del cliente. 
+
+## Tipi di OSINT
+
+![02.png](images/02.png)
+
+Keyword nei motori di ricerca:
+- AND: entrambe le parole devono essere presenti, e.g., green AND blue.
+- OR: almeno una delle parole deve essere presente, e.g., green OR blue.
+- `-` (Minus): escludere i risultati.
+- `*` (Asterisk): wildcard, include delle derivazioni.
+- `""` (Quotes): per cercare una parola o frase in maniera specifica.
+- Altre keyword: ![03.png](images/03.png)
+
+## Analisi delle fonti
+La valutazione delle fonti è un fattore importante del processo OSINT. Ci sono delle domande che ci dobbiamo porre per determinare l'affidabilità delle fonti (who, when, where, what, why).
+
+Nomenclatura OSINT:
+- I2P: è una rete di copertura anonima, una rete dentro la rete. Il suo scopo è di proteggere le comunicazioni dal controllo a tappeto e dal monitoraggio di terze parti come gli ISP.
+- Freenet: è una rete decentralizzata, creata per resistere alla censura, che sfrutta le risorse (banda passante, spazio su disco) dei suoi utenti per permettere la pubblicazione e la fruizione di qualsiasi tipo di informazione. Costruita pensando ad anonimato e sicurezza, non alla velocità di trasmissione.
+- Google Dorks: ricerche che possono essere fatte indicando specifiche parole chiave che istruiscono il motore affinché imposti speciali filtri.
+- Meta Search Engine: un motore di ricerca definito metasearch utilizza altri motori di ricerca e aggrega i loro dati.
+- Dati EXIF: metadati delle fotografie.
+- Wayback Machine: progetto con lo scopo di archiviare e rendere disponibili pagine web e le loro modifiche nel tempo.
+- FOCA (Fingerprinting Organizations with Collected Archives): strumento utilizzato principalmente per trovare i metadati e le informazioni nascoste nei documenti esaminati.
+- MALTEGO: software che offre la possibilità di raccogliere informazioni tramite la consultazione di dati pubblicamente accessibili e raggrupparle, in formato grafico, attraverso l'utilizzo di trasformazioni.
+
+---
+
+# Autodifesa
+
+## Deep Web vs Dark Web
+Il **Deep Web** comprende tutte le informazioni e i contenuti che non sono indicizzati dai motori di ricerca tradizionali, come Google o Bing.  
+Questi motori utilizzano spider, strumenti automatizzati per scansionare il web e raccogliere i contenuti delle pagine. Tuttavia, alcuni fattori possono impedire agli spider di accedere e indicizzare determinati contenuti, tra cui:
+
+- Blocchi di sicurezza.  
+- Codici corrotti o mal configurati.  
+- Configurazioni speciali (ad esempio file `.htaccess`).  
+- Protezioni tramite password.  
+
+Rientrano in questa categoria:
+- Siti web di nuova creazione non ancora indicizzati.  
+- Pagine web con contenuti dinamici.  
+- Applicazioni web.  
+- Siti privati aziendali.
+
+Il **Dark Web** è un sottoinsieme del Deep Web, accessibile esclusivamente tramite software specifici che fungono da ponte tra Internet e le reti anonime, note come **DarkNet**.
+
+Le darknet più comuni:
+- **Tor**: uno dei più famosi, fornisce accesso alla rete Tor e garantisce l'anonimato degli utenti, consentendo loro di navigare sia sul Dark Web che sul normale World Wide Web in modo anonimo.  
+- **I2P**: progettata per comunicazioni anonime tra utenti.  
+- **Freenet**: focalizzata sulla condivisione sicura e anonima di file.
+
+## By Design e By Default
+Per **dato personale** si intende qualunque informazione relativa a persona fisica, persona giuridica, ente o associazione, identificati o identificabili, anche indirettamente, mediante riferimento a qualsiasi altra informazione, ivi compreso un numero di identificazione personale. Si considera tale il dato oggettivo, ma anche il dato valutativo.
+
+Il **GDPR** introduce due approcci obbligatori per il trattamento dei dati personali: **By Design** e **By Default**.
+
+**By Design**: significa analizzare il trattamento dei dati lungo tutto il loro ciclo di vita.  
+L'obiettivo è tutelare i diritti dell'interessato fin dalla fase di progettazione e durante tutta la gestione dei dati, adottando misure tecniche e organizzative, come:
+- **Minimizzazione dei dati**: raccogliere solo i dati strettamente necessari.  
+- **Pseudonimizzazione**: separare i dati personali dall'identità dell'interessato per ridurre il rischio di accesso non autorizzato.
+
+**By Default**: prevede di adottare configurazioni inizialmente “chiuse” per i sistemi informatici, ampliandole solo dopo una valutazione attenta dell'impatto di eventuali aperture.  
+Le impostazioni predefinite devono garantire la massima protezione della privacy, affinché:
+- I dati personali siano accessibili solo a chi è autorizzato.  
+- Non vengano resi accessibili a un numero indefinito di persone senza esplicito intervento umano.
+
+## Data breach
+Con il termine&nbsp;**data breach**&nbsp;si intende un incidente di sicurezza in cui dati sensibili, protetti o riservati vengono consultati, copiati, trasmessi, rubati o utilizzati da un soggetto non autorizzato. Solitamente il data breach si realizza con una divulgazione di dati riservati o confidenziali all'interno di un ambiente privo di misure di sicurezze (da esempio, su web) in maniera involontaria o volontaria. Tale divulgazione può avvenire in seguito a:
+- Perdita accidentale: ad esempio, data breach causato da smarrimento di una chiavetta USB contenente dati riservati.
+- Furto: ad esempio, data breach causato da furto di un notebook contenente dati confidenziali.
+- Infedeltà aziendale: ad esempio, data breach causato da una persona interna che avendo autorizzazione ad accedere ai dati ne produce una copia distribuita in ambiente pubblico.
+- Accesso abusivo: ad esempio, data breach causato da un accesso non autorizzato ai sistemi informatici con successiva divulgazione delle informazioni acquisite.
+
+## Cancellazione di file e Slack Space
+Quando viene cancellato un file, viene solo messo un flag (l'operazione effettiva varia in base al file system) per indicare che il file è "deleted". I cluster utilizzati dal file cancellato vengono resi nuovamente disponibili per altri file.
+L'operazione di cancellazione di un file **non ripulisce i cluster** del loro contenuto, permettendo così il recupero dei file cancellati se non sono stati **sovrascritti**.
+Se il contenuto di un file non riempie completamente un cluster, possono rimanere parti del file che occupava precedentemente quel cluster. Questo spazio residuo viene chiamato **Slack Space**.
+
+---
+
+# Network Forensics
+La parola **forensics** deriva dal latino *forens*, che significa "appartenente al pubblico". È correlata alle parole *forum* e *scientia*, che significano rispettivamente "nel foro" e "conoscenza".
+&gt; Nell'antica Roma, i procedimenti penali si svolgevano pubblicamente nel mercato (*forum*).
+
+La scienza forense si riferisce all'applicazione di metodi scientifici nei procedimenti penali e civili.
+
+Gli aspetti tecnici delle investigazioni forensi si sono evoluti in diverse **sotto-discipline**, in base alle particolari condizioni delle prove (e.g., tossicologia, analisi delle impronte digitali).
+
+La **digital forensics** è una branca della scienza forense che si occupa del recupero e dell'indagine di materiali presenti in formato digitale.
+
+## Principi fondamentali per la gestione delle prove elettroniche
+1. **Integrità dei dati (Data integrity)**: Nessuna azione intrapresa deve modificare dispositivi elettronici o supporti, i quali potrebbero essere successivamente utilizzati in tribunale.
+
+2. **Tracciabilità (Audit trail)**: Deve essere creato e conservato un registro (audit trail) o altra documentazione di tutte le azioni intraprese durante la gestione delle prove elettroniche. Un terzo indipendente dovrebbe essere in grado di esaminare tali azioni e ottenere gli stessi risultati.
+
+3. **Supporto specialistico (Specialist support)**: Se si presume che durante un’operazione possano essere trovate prove elettroniche, la persona responsabile deve notificare tempestivamente specialisti o consulenti esterni.
+
+4. **Formazione adeguata (Appropriate training)**: I primi soccorritori devono essere adeguatamente formati per cercare e sequestrare prove elettroniche nel caso in cui non siano presenti esperti sul posto.
+
+5. **Legalità (Legality)**: La persona o l’agenzia responsabile del caso deve assicurarsi che vengano rispettati la legge, i principi forensi generali, quelli procedurali e i principi elencati. Questo vale per il possesso e l’accesso alle prove elettroniche.
+
+## Metodologia OSCAR
+
+La **network forensics** segue gli stessi principi di base della digital forensics, adottando la metodologia OSCAR, un framework che garantisce risultati costanti e appropriati.
+
+![04.png](images/04.png)
+
+### 1. Ottenere informazioni (Obtain)
+Una delle prime azioni è raccogliere informazioni sull'incidente e sull'ambiente. Questo passaggio è cruciale per fornire al perito forense un quadro dettagliato dell'evento. È essenziale raccogliere dati come:
+- Timestamp e timeline dell'evento;
+- Persone coinvolte;
+- Sistemi ed endpoint interessati dall'incidente.
+
+### 2. Strategizzare (Strategize)
+La pianificazione dell'indagine è fondamentale, poiché i log dei vari dispositivi possono differire per natura. Ad esempio, la volatilità dei log di un firewall è diversa da quella di dettagli come l'ARP di un sistema.  
+Durante questa fase bisogna:
+- Definire obiettivi chiari e una timeline;
+- Identificare le fonti di evidenza;
+- Analizzare il costo e il valore delle fonti;
+- Prioritizzare l'acquisizione delle prove;
+- Pianificare aggiornamenti periodici per il "cliente";
+- Utilizzare la lista delle priorità per allocare risorse e personale.
+
+### 3. Raccogliere le prove (Collect)
+In questa fase, le prove vengono acquisite seguendo il piano stabilito. L'acquisizione richiede la documentazione di tutti i sistemi utilizzati, la cattura e il salvataggio dei flussi di dati su hard disk e la raccolta di log da server e firewall.
+
+Best practice per la raccolta delle prove:
+1. Creare copie delle prove e generare hash crittografici per la verifica:
+   - Catturare pacchetti, copiare log, creare immagini dei dischi rigidi, ecc.
+2. Non lavorare mai sulle prove originali; utilizzare sempre copie.
+3. Usare strumenti standard del settore.
+4. Documentare tutte le azioni: tutte le operazioni effettuate e i sistemi accessi devono essere registrati. La documentazione deve includere:
+   - Orario, fonte delle prove, metodo di acquisizione e i nomi degli investigatori coinvolti.
+5. Conservare e trasportare le prove: mantenere la **catena di custodia**, documentando ogni fase del sequestro, custodia, controllo, trasferimento, analisi e gestione delle prove (fisiche o elettroniche).
+
+### 4. Analizzare i dati (Analyze)
+Questa è la fase centrale dell'indagine, in cui si analizzano i dati per risolvere il caso. Si utilizzano tecniche sia automatiche che manuali, con strumenti specifici, per:
+- Correlare dati provenienti da diverse fonti;
+- Creare una timeline degli eventi;
+- Eliminare falsi positivi;
+- Formulare teorie supportate dalle prove.
+
+&gt; Gran parte del tempo in un'indagine forense è dedicata proprio all'analisi dei dati.
+
+## Monitoraggio del traffico di rete
+
+Una delle forme più basilari di cattura delle informazioni è l'uso di **taps** su cavi di rete o fibra ottica per intercettare il traffico.
+
+La maggior parte dei fornitori di dispositivi di rete offre:
+- **Network taps**: strumenti che permettono di duplicare il traffico di rete per l'analisi.
+- **Porte SPAN (Switched Port Analyzer)**: porte che inoltrano tutto il traffico visto su una determinata porta o VLAN al sistema di analisi.
+
+---
+
+# Digital Forensics
+La **Digital Forensics** è la scienza che studia come ottenere, preservare, analizzare e documentare le evidenze digitali (prove) dai dispositivi elettronici come: Tablet PC, Server, PDA, fax machine, digital camera, iPod, Smartphone (Mobile Forensics) e tutti gli altri dispositivi di memorizzazione.
+Una **digital evidence** può essere definita come qualsiasi informazione avente valore probatorio che sia memorizzata o trasmessa in forma digitale.
+
+Fasi della Computer Forensics:
+1. **Identificazione, Raccolta e Acquisizione**: Prima fase in cui si identificano, raccolgono e acquisiscono i dati rilevanti per l'indagine (Live Forensics).
+2. **Preservazione (Catena di Custodia)**: Garantire che i dati raccolti siano protetti e che la catena di custodia venga mantenuta, documentando ogni passaggio del trattamento delle prove (Forensics Copy).
+3. **Analisi**: Estrarre i dati significativi per l'indagine e analizzarli. Questa fase prevede l'utilizzo di strumenti e tecniche per individuare informazioni rilevanti (Forensics Toolkit).
+4. **Presentazione delle Prove**: Fase finale e più importante, durante la quale i risultati dell'indagine sono presentati in modo comprensibile anche ai non esperti (come avvocati, pubblici ministeri, giudici, ecc.). È una buona pratica redigere un documento in cui vengono analizzati e spiegati, passo dopo passo, tutti i dati raccolti e i risultati ottenuti.
+
+## Antiforensics
+La cifratura è un ottimo metodo di Antiforensics. Esistono anche altre tipologie di Antiforensics come la **steganografia** e la **cancellazione sicura dei file**.
+
+Il termine **steganografia** deriva dal greco, e il suo significato letterale è "scrittura nascosta". È differente dalla crittografia in quanto, la steganografia nasconde un'informazione (l'esistenza di una informazione), mentre la crittografia la cifra (nasconde il contenuto dell'informazione). Le due tecniche possono essere abbinate e sono complementari. Utilizzando la crittografia vediamo il messaggio, ma cifrato, mentre l'obiettivo della steganografia è di nascondere un qualcosa (messaggio) all'interno di un contenitore noto. Per tecnica steganografica quindi si intende quel processo di occultamento di un' informazione (aka camouflage).</code></pre>
+
+		</main>
+	</body>
+</html>
