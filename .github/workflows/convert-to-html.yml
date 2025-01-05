@@ -1,8 +1,9 @@
 name: Docs to HTML
 
 on:
-  pull_request_target:
-    types: [opened, ready_for_review]
+  push:
+    branches:
+      - main
     paths:
       - 'teoria/**.md'
       - 'teoria/images/**'
