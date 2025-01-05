@@ -9,7 +9,7 @@ debugInConsole: false # Print debug info in Obsidian console
 ---
 
 # Sicurezza informatica
-Con il termine Cybercrime si intende l'esecuzione di crimini, mediante l’ausilio di mezzi informatici e di telecomunicazione, con lo scopo di acquisire illegalmente informazioni e di tramutarle in denaro.
+Con il termine Cybercrime si intende l'esecuzione di crimini, mediante l'ausilio di mezzi informatici e di telecomunicazione, con lo scopo di acquisire illegalmente informazioni e di tramutarle in denaro.
 
 Nomenclatura:
 - **AV**: Antivirus.
@@ -26,7 +26,7 @@ Nomenclatura:
 - **Dump checking**: Utilizzo di software specifici o la codifica dei dati della traccia su una carta di plastica per testare se il dump è approvato o rifiutato. Questo dà ai carder maggiore sicurezza sulla qualità dei dump e sulla loro accettazione nei negozi.  
 - **Full info(s)**: Termine che descrive il possesso di indirizzi, numeri di telefono, numeri di previdenza sociale, PIN, report creditizi, e così via. Le "Full Info(s)" sono usate dai carder per prendere il controllo dell'identità di una persona o per venderla.  
 - **Holos**: Slang per "ologrammi". Gli ologrammi sono importanti per chi realizza carte di credito false per imitare una caratteristica di sicurezza esistente.  
-- **ICQ**: Abbreviazione di "I Seek You". ICQ è il sistema di messaggistica istantanea più usato dai carder, soprattutto nella cultura Internet dell’Europa dell’Est.  
+- **ICQ**: Abbreviazione di "I Seek You". ICQ è il sistema di messaggistica istantanea più usato dai carder, soprattutto nella cultura Internet dell'Europa dell'Est.  
 - **IRC**: Abbreviazione di "Internet Relay Chat". IRC è un sistema globale di server che consente chat testuali in tempo reale, scambio di file e altre interazioni.  
 - **IDs**: Slang per documenti di identità. I carder commercializzano una varietà di documenti, tra cui bollette, diplomi, patenti di guida, passaporti o qualsiasi cosa utilizzabile come documento di identità.  
 - **MSR (Magnetic Strip Reader)**: Dispositivo usato per copiare informazioni di carte di pagamento e/o per codificare informazioni della banda magnetica su carte di plastica.  
@@ -36,11 +36,11 @@ Nomenclatura:
 - **Track 1/Track 2 data**: Informazioni memorizzate sulla banda magnetica di una carta di pagamento che contengono i dati del conto.
 
 ## Hat
-- **Black-hat**: Hacker che violano i sistemi informatici per scopi personali o criminali. Rubano informazioni e spesso le rivendono a paesi stranieri. Agiscono deliberatamente sul “lato oscuro” dell’hacking.
+- **Black-hat**: Hacker che violano i sistemi informatici per scopi personali o criminali. Rubano informazioni e spesso le rivendono a paesi stranieri. Agiscono deliberatamente sul “lato oscuro” dell'hacking.
 - **Grey-hat**: Hacker che non si identificano né come black-hat né come white-hat. Possono aver commesso intrusioni in passato ma scelgono di non perseguire attività criminali.
 - **White-hat**: Hacker “etici” con le competenze dei black-hat, ma che collaborano con autorità e aziende per combattere i crimini informatici. Non violano sistemi per scopi illeciti o economici.
 
-## Hacker’s Profiling Project (HPP)
+## Hacker's Profiling Project (HPP)
 
 | **ID dell'attaccante**              | **Hacker solitario / di gruppo**           | **Obiettivo**                     | **Motivazioni / Scopi**                                                             |
 | ----------------------------------- | ------------------------------------------ | --------------------------------- | ----------------------------------------------------------------------------------- |
@@ -136,7 +136,7 @@ Keyword nei motori di ricerca:
 - Altre keyword: ![[03.png]]
 
 ## Analisi delle fonti
-La valutazione delle fonti è un fattore importante del processo OSINT. Ci sono delle domande che ci dobbiamo porre per determinare l’affidabilità delle fonti (who, when, where, what, why).
+La valutazione delle fonti è un fattore importante del processo OSINT. Ci sono delle domande che ci dobbiamo porre per determinare l'affidabilità delle fonti (who, when, where, what, why).
 
 Nomenclatura OSINT:
 - I2P: è una rete di copertura anonima, una rete dentro la rete. Il suo scopo è di proteggere le comunicazioni dal controllo a tappeto e dal monitoraggio di terze parti come gli ISP.
@@ -146,7 +146,7 @@ Nomenclatura OSINT:
 - Dati EXIF: metadati delle fotografie.
 - Wayback Machine: progetto con lo scopo di archiviare e rendere disponibili pagine web e le loro modifiche nel tempo.
 - FOCA (Fingerprinting Organizations with Collected Archives): strumento utilizzato principalmente per trovare i metadati e le informazioni nascoste nei documenti esaminati.
-- MALTEGO: software che offre la possibilità di raccogliere informazioni tramite la consultazione di dati pubblicamente accessibili e raggrupparle, in formato grafico, attraverso l’utilizzo di trasformazioni.
+- MALTEGO: software che offre la possibilità di raccogliere informazioni tramite la consultazione di dati pubblicamente accessibili e raggrupparle, in formato grafico, attraverso l'utilizzo di trasformazioni.
 
 ---
 
@@ -180,17 +180,17 @@ Per **dato personale** si intende qualunque informazione relativa a persona fisi
 Il **GDPR** introduce due approcci obbligatori per il trattamento dei dati personali: **By Design** e **By Default**.
 
 **By Design**: significa analizzare il trattamento dei dati lungo tutto il loro ciclo di vita.  
-L’obiettivo è tutelare i diritti dell’interessato fin dalla fase di progettazione e durante tutta la gestione dei dati, adottando misure tecniche e organizzative, come:
+L'obiettivo è tutelare i diritti dell'interessato fin dalla fase di progettazione e durante tutta la gestione dei dati, adottando misure tecniche e organizzative, come:
 - **Minimizzazione dei dati**: raccogliere solo i dati strettamente necessari.  
-- **Pseudonimizzazione**: separare i dati personali dall’identità dell’interessato per ridurre il rischio di accesso non autorizzato.
+- **Pseudonimizzazione**: separare i dati personali dall'identità dell'interessato per ridurre il rischio di accesso non autorizzato.
 
-**By Default**: prevede di adottare configurazioni inizialmente “chiuse” per i sistemi informatici, ampliandole solo dopo una valutazione attenta dell’impatto di eventuali aperture.  
+**By Default**: prevede di adottare configurazioni inizialmente “chiuse” per i sistemi informatici, ampliandole solo dopo una valutazione attenta dell'impatto di eventuali aperture.  
 Le impostazioni predefinite devono garantire la massima protezione della privacy, affinché:
 - I dati personali siano accessibili solo a chi è autorizzato.  
 - Non vengano resi accessibili a un numero indefinito di persone senza esplicito intervento umano.
 
 ## Data breach
-Con il termine **data breach** si intende un incidente di sicurezza in cui dati sensibili, protetti o riservati vengono consultati, copiati, trasmessi, rubati o utilizzati da un soggetto non autorizzato. Solitamente il data breach si realizza con una divulgazione di dati riservati o confidenziali all’interno di un ambiente privo di misure di sicurezze (da esempio, su web) in maniera involontaria o volontaria. Tale divulgazione può avvenire in seguito a:
+Con il termine **data breach** si intende un incidente di sicurezza in cui dati sensibili, protetti o riservati vengono consultati, copiati, trasmessi, rubati o utilizzati da un soggetto non autorizzato. Solitamente il data breach si realizza con una divulgazione di dati riservati o confidenziali all'interno di un ambiente privo di misure di sicurezze (da esempio, su web) in maniera involontaria o volontaria. Tale divulgazione può avvenire in seguito a:
 - Perdita accidentale: ad esempio, data breach causato da smarrimento di una chiavetta USB contenente dati riservati.
 - Furto: ad esempio, data breach causato da furto di un notebook contenente dati confidenziali.
 - Infedeltà aziendale: ad esempio, data breach causato da una persona interna che avendo autorizzazione ad accedere ai dati ne produce una copia distribuita in ambiente pubblico.
@@ -204,8 +204,90 @@ Se il contenuto di un file non riempie completamente un cluster, possono rimaner
 ## Antiforensics
 La cifratura è un ottimo metodo di Antiforensics. Esistono anche altre tipologie di Antiforensics come la **steganografia** e la **cancellazione sicura dei file**.
 
-Il termine **steganografia** deriva dal greco, e il suo significato letterale è "scrittura nascosta". E’ differente dalla crittografia in quanto, la steganografia nasconde un’informazione (l’esistenza di una informazione), mentre la crittografia la cifra (nasconde il contenuto dell’informazione). Le due tecniche possono essere abbinate e sono complementari. Utilizzando la crittografia vediamo il messaggio, ma cifrato, mentre l’obiettivo della steganografia è di nascondere un qualcosa (messaggio) all’interno di un contenitore noto. Per tecnica steganografica quindi si intende quel processo di occultamento di un’ informazione. (Camouflage)
+Il termine **steganografia** deriva dal greco, e il suo significato letterale è "scrittura nascosta". E' differente dalla crittografia in quanto, la steganografia nasconde un'informazione (l'esistenza di una informazione), mentre la crittografia la cifra (nasconde il contenuto dell'informazione). Le due tecniche possono essere abbinate e sono complementari. Utilizzando la crittografia vediamo il messaggio, ma cifrato, mentre l'obiettivo della steganografia è di nascondere un qualcosa (messaggio) all'interno di un contenitore noto. Per tecnica steganografica quindi si intende quel processo di occultamento di un' informazione (aka camouflage).
 
-## Digital Forensics
+---
+
+# Network Forensics
+La parola **forensics** deriva dal latino *forens*, che significa "appartenente al pubblico". È correlata alle parole *forum* e *scientia*, che significano rispettivamente "nel foro" e "conoscenza".
+> Nell'antica Roma, i procedimenti penali si svolgevano pubblicamente nel mercato (*forum*).
+
+La scienza forense si riferisce all'applicazione di metodi scientifici nei procedimenti penali e civili.
+
+Gli aspetti tecnici delle investigazioni forensi si sono evoluti in diverse **sotto-discipline**, in base alle particolari condizioni delle prove (e.g., tossicologia, analisi delle impronte digitali).
+
+La **digital forensics** è una branca della scienza forense che si occupa del recupero e dell'indagine di materiali presenti in formato digitale.
+
+## Principi fondamentali per la gestione delle prove elettroniche
+1. **Integrità dei dati (Data integrity)**: Nessuna azione intrapresa deve modificare dispositivi elettronici o supporti, i quali potrebbero essere successivamente utilizzati in tribunale.
+
+2. **Tracciabilità (Audit trail)**: Deve essere creato e conservato un registro (audit trail) o altra documentazione di tutte le azioni intraprese durante la gestione delle prove elettroniche. Un terzo indipendente dovrebbe essere in grado di esaminare tali azioni e ottenere gli stessi risultati.
+
+3. **Supporto specialistico (Specialist support)**: Se si presume che durante un’operazione possano essere trovate prove elettroniche, la persona responsabile deve notificare tempestivamente specialisti o consulenti esterni.
+
+4. **Formazione adeguata (Appropriate training)**: I primi soccorritori devono essere adeguatamente formati per cercare e sequestrare prove elettroniche nel caso in cui non siano presenti esperti sul posto.
+
+5. **Legalità (Legality)**: La persona o l’agenzia responsabile del caso deve assicurarsi che vengano rispettati la legge, i principi forensi generali, quelli procedurali e i principi elencati. Questo vale per il possesso e l’accesso alle prove elettroniche.
+
+## Metodologia OSCAR
+
+La **network forensics** segue gli stessi principi di base della digital forensics, adottando la metodologia OSCAR, un framework che garantisce risultati costanti e appropriati.
+
+![[04.png]]
+
+### 1. Ottenere informazioni (Obtain)
+Una delle prime azioni è raccogliere informazioni sull'incidente e sull'ambiente. Questo passaggio è cruciale per fornire al perito forense un quadro dettagliato dell'evento. È essenziale raccogliere dati come:
+- Timestamp e timeline dell'evento;
+- Persone coinvolte;
+- Sistemi ed endpoint interessati dall'incidente.
+
+### 2. Strategizzare (Strategize)
+La pianificazione dell'indagine è fondamentale, poiché i log dei vari dispositivi possono differire per natura. Ad esempio, la volatilità dei log di un firewall è diversa da quella di dettagli come l'ARP di un sistema.  
+Durante questa fase bisogna:
+- Definire obiettivi chiari e una timeline;
+- Identificare le fonti di evidenza;
+- Analizzare il costo e il valore delle fonti;
+- Prioritizzare l'acquisizione delle prove;
+- Pianificare aggiornamenti periodici per il "cliente";
+- Utilizzare la lista delle priorità per allocare risorse e personale.
+
+### 3. Raccogliere le prove (Collect)
+In questa fase, le prove vengono acquisite seguendo il piano stabilito. L'acquisizione richiede la documentazione di tutti i sistemi utilizzati, la cattura e il salvataggio dei flussi di dati su hard disk e la raccolta di log da server e firewall.
+
+Best practice per la raccolta delle prove:
+1. Creare copie delle prove e generare hash crittografici per la verifica:
+   - Catturare pacchetti, copiare log, creare immagini dei dischi rigidi, ecc.
+2. Non lavorare mai sulle prove originali; utilizzare sempre copie.
+3. Usare strumenti standard del settore.
+4. Documentare tutte le azioni: tutte le operazioni effettuate e i sistemi accessi devono essere registrati. La documentazione deve includere:
+   - Orario, fonte delle prove, metodo di acquisizione e i nomi degli investigatori coinvolti.
+5. Conservare e trasportare le prove: mantenere la **catena di custodia**, documentando ogni fase del sequestro, custodia, controllo, trasferimento, analisi e gestione delle prove (fisiche o elettroniche).
+
+### 4. Analizzare i dati (Analyze)
+Questa è la fase centrale dell'indagine, in cui si analizzano i dati per risolvere il caso. Si utilizzano tecniche sia automatiche che manuali, con strumenti specifici, per:
+- Correlare dati provenienti da diverse fonti;
+- Creare una timeline degli eventi;
+- Eliminare falsi positivi;
+- Formulare teorie supportate dalle prove.
+
+> Gran parte del tempo in un'indagine forense è dedicata proprio all'analisi dei dati.
+
+## Monitoraggio del traffico di rete
+
+Una delle forme più basilari di cattura delle informazioni è l'uso di **taps** su cavi di rete o fibra ottica per intercettare il traffico.
+
+La maggior parte dei fornitori di dispositivi di rete offre:
+- **Network taps**: strumenti che permettono di duplicare il traffico di rete per l'analisi.
+- **Porte SPAN (Switched Port Analyzer)**: porte che inoltrano tutto il traffico visto su una determinata porta o VLAN al sistema di analisi.
+
+---
+
+# Digital Forensics
 La **Digital Forensics** è la scienza che studia come ottenere, preservare, analizzare e documentare le evidenze digitali (prove) dai dispositivi elettronici come: Tablet PC, Server, PDA, fax machine, digital camera, iPod, Smartphone (Mobile Forensics) e tutti gli altri dispositivi di memorizzazione.
 Una **digital evidence** può essere definita come qualsiasi informazione avente valore probatorio che sia memorizzata o trasmessa in forma digitale.
+
+Fasi della Computer Forensics:
+1. **Identificazione, Raccolta e Acquisizione**: Prima fase in cui si identificano, raccolgono e acquisiscono i dati rilevanti per l'indagine (Live Forensics).
+2. **Preservazione (Catena di Custodia)**: Garantire che i dati raccolti siano protetti e che la catena di custodia venga mantenuta, documentando ogni passaggio del trattamento delle prove (Forensics Copy).
+3. **Analisi**: Estrarre i dati significativi per l'indagine e analizzarli. Questa fase prevede l'utilizzo di strumenti e tecniche per individuare informazioni rilevanti (Forensics Toolkit).
+4. **Presentazione delle Prove**: Fase finale e più importante, durante la quale i risultati dell'indagine sono presentati in modo comprensibile anche ai non esperti (come avvocati, pubblici ministeri, giudici, ecc.). È una buona pratica redigere un documento in cui vengono analizzati e spiegati, passo dopo passo, tutti i dati raccolti e i risultati ottenuti.
