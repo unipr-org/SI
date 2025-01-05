@@ -201,11 +201,6 @@ Quando viene cancellato un file, viene solo messo un flag (l'operazione effettiv
 L'operazione di cancellazione di un file **non ripulisce i cluster** del loro contenuto, permettendo così il recupero dei file cancellati se non sono stati **sovrascritti**.
 Se il contenuto di un file non riempie completamente un cluster, possono rimanere parti del file che occupava precedentemente quel cluster. Questo spazio residuo viene chiamato **Slack Space**.
 
-## Antiforensics
-La cifratura è un ottimo metodo di Antiforensics. Esistono anche altre tipologie di Antiforensics come la **steganografia** e la **cancellazione sicura dei file**.
-
-Il termine **steganografia** deriva dal greco, e il suo significato letterale è "scrittura nascosta". E' differente dalla crittografia in quanto, la steganografia nasconde un'informazione (l'esistenza di una informazione), mentre la crittografia la cifra (nasconde il contenuto dell'informazione). Le due tecniche possono essere abbinate e sono complementari. Utilizzando la crittografia vediamo il messaggio, ma cifrato, mentre l'obiettivo della steganografia è di nascondere un qualcosa (messaggio) all'interno di un contenitore noto. Per tecnica steganografica quindi si intende quel processo di occultamento di un' informazione (aka camouflage).
-
 ---
 
 # Network Forensics
@@ -291,3 +286,8 @@ Fasi della Computer Forensics:
 2. **Preservazione (Catena di Custodia)**: Garantire che i dati raccolti siano protetti e che la catena di custodia venga mantenuta, documentando ogni passaggio del trattamento delle prove (Forensics Copy).
 3. **Analisi**: Estrarre i dati significativi per l'indagine e analizzarli. Questa fase prevede l'utilizzo di strumenti e tecniche per individuare informazioni rilevanti (Forensics Toolkit).
 4. **Presentazione delle Prove**: Fase finale e più importante, durante la quale i risultati dell'indagine sono presentati in modo comprensibile anche ai non esperti (come avvocati, pubblici ministeri, giudici, ecc.). È una buona pratica redigere un documento in cui vengono analizzati e spiegati, passo dopo passo, tutti i dati raccolti e i risultati ottenuti.
+
+## Antiforensics
+La cifratura è un ottimo metodo di Antiforensics. Esistono anche altre tipologie di Antiforensics come la **steganografia** e la **cancellazione sicura dei file**.
+
+Il termine **steganografia** deriva dal greco, e il suo significato letterale è "scrittura nascosta". È differente dalla crittografia in quanto, la steganografia nasconde un'informazione (l'esistenza di una informazione), mentre la crittografia la cifra (nasconde il contenuto dell'informazione). Le due tecniche possono essere abbinate e sono complementari. Utilizzando la crittografia vediamo il messaggio, ma cifrato, mentre l'obiettivo della steganografia è di nascondere un qualcosa (messaggio) all'interno di un contenitore noto. Per tecnica steganografica quindi si intende quel processo di occultamento di un' informazione (aka camouflage).
