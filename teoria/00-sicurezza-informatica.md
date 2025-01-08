@@ -9,7 +9,7 @@ debugInConsole: false # Print debug info in Obsidian console
 ---
 
 # Sicurezza informatica
-Con il termine Cybercrime si intende l'esecuzione di crimini, mediante l'ausilio di mezzi informatici e di telecomunicazione, con lo scopo di acquisire illegalmente informazioni e di tramutarle in denaro.
+Con il termine *Cybercrime* si intende l'esecuzione di crimini, mediante l'ausilio di mezzi informatici e di telecomunicazione, con lo scopo di acquisire illegalmente informazioni e di tramutarle in denaro.
 
 Nomenclatura:
 - **AV**: Antivirus.
@@ -42,7 +42,7 @@ Nomenclatura:
 
 ## Hacker's Profiling Project (HPP)
 
-| **ID dell'attaccante**              | **Hacker solitario / di gruppo**           | **Obiettivo**                     | **Motivazioni / Scopi**                                                             |
+| ***Attaccante***                    | ***Come agiscono***                        | **Obiettivo**                     | **Motivazioni / Scopi**                                                             |
 | ----------------------------------- | ------------------------------------------ | --------------------------------- | ----------------------------------------------------------------------------------- |
 | **Wanna Be Lamer**                  | GRUPPO                                     | Utente finale                     | Per moda, è "figo" => per vantarsi e mettersi in mostra                             |
 | **Script Kiddie**                   | GRUPPO: ma agiscono da soli                | PMI / Vulnerabilità specifiche    | Per sfogare la loro rabbia / attirare l'attenzione dei media                        |
@@ -51,7 +51,7 @@ Nomenclatura:
 | **Quiet, Paranoid, Skilled Hacker** | SOLITARIO                                  | Su necessità                      | Per curiosità (per imparare) => scopi egoistici                                     |
 | **Cyber-Warrior**                   | SOLITARIO                                  | Aziende "simbolo" / Utenti finali | Per profitto                                                                        |
 | **Industrial Spy**                  | SOLITARIO                                  | Aziende / Corporazioni            | Per profitto                                                                        |
-| **Government Agent**                | SOLITARIO / GRUPPO                         | Governo / Terroristi sospetti   | Spionaggio / Controspionaggio / Test di vulnerabilità / Monitoraggio delle attività |
+| **Government Agent**                | SOLITARIO / GRUPPO                         | Governo / Terroristi sospetti     | Spionaggio / Controspionaggio / Test di vulnerabilità / Monitoraggio delle attività |
 | **Military Hacker**                 | SOLITARIO / GRUPPO                         | Governo / Aziende strategiche     | Monitoraggio / controllo / sabotaggio di sistemi                                    |
 
 ## Fasi del cybercrime
@@ -133,7 +133,8 @@ Keyword nei motori di ricerca:
 - `-` (Minus): escludere i risultati.
 - `*` (Asterisk): wildcard, include delle derivazioni.
 - `""` (Quotes): per cercare una parola o frase in maniera specifica.
-- Altre keyword: ![[03.png]]
+- Altre keyword: 
+![[03.png]]
 
 ## Analisi delle fonti
 La valutazione delle fonti è un fattore importante del processo OSINT. Ci sono delle domande che ci dobbiamo porre per determinare l'affidabilità delle fonti (who, when, where, what, why).
@@ -236,7 +237,7 @@ Una delle prime azioni è raccogliere informazioni sull'incidente e sull'ambient
 - Persone coinvolte;
 - Sistemi ed endpoint interessati dall'incidente.
 
-### 2. Strategizzare (Strategize)
+### 2. Stabilire strategie (Strategize)
 La pianificazione dell'indagine è fondamentale, poiché i log dei vari dispositivi possono differire per natura. Ad esempio, la volatilità dei log di un firewall è diversa da quella di dettagli come l'ARP di un sistema.  
 Durante questa fase bisogna:
 - Definire obiettivi chiari e una timeline;
