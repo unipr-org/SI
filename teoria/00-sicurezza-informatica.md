@@ -14,7 +14,8 @@ Con il termine *Cybercrime* si intende l'esecuzione di crimini, mediante l'ausil
 Nomenclatura:
 - **AV**: Antivirus.
 - **Carder**: Termine slang usato per descrivere individui che utilizzano informazioni rubate di conti di carte di credito per effettuare transazioni fraudolente.  
-- **Carding**: Traffico e uso fraudolento di informazioni rubate di conti di carte di credito.  
+- **Carding**: Traffico e uso fraudolento di informazioni rubate di conti di carte di credito.
+- **Carving**: Tecnica di recupero dati che consiste nell’estrarre file o frammenti incompleti da un disco o da un’immagine forense (Vedi Wiping).
 - **Cashing**: Atto di ottenere denaro commettendo frodi. Questo può avvenire in diversi modi, ad esempio incassando bonifici Western Union, ordini di pagamento postali, o fondi su WebMoney; utilizzando dati della banda magnetica con PIN per prelievi da bancomat o account PayPal; oppure aprendo un conto bancario con un documento falso per prelevare denaro da un conto di carta di credito.  
 - **CC**: Slang per "carta di credito".  
 - **Change of Billing (COB o COBs)**: Atto di cambiare l'indirizzo di fatturazione di un conto di credito per farlo corrispondere a un punto di smistamento postale. Questo permette al carder di avere il pieno controllo del conto compromesso e aumenta la probabilità che il conto non venga rifiutato durante transazioni online.  
@@ -34,6 +35,7 @@ Nomenclatura:
 - **POS (Point of Sale)**: Terminale attraverso cui si strisciano le carte di credito per comunicare con i processori che approvano o rifiutano le transazioni.  
 - **Proxies**: Server proxy utilizzati per mascherare l'identità su Internet. I carder usano ampiamente proxy, socks, http, https, e VPN (Virtual Private Networks) per nascondere il proprio indirizzo IP durante attività fraudolente online.  
 - **Track 1/Track 2 data**: Informazioni memorizzate sulla banda magnetica di una carta di pagamento che contengono i dati del conto.
+- **Wiping**: È il processo di cancellazione sicura dei dati da un supporto di memoria (hard disk, SSD, USB, ecc...) mediante la sovrascrittura, con lo scopo di rendere i dati originali illeggibili o irrecuperabili (Vedi Carving).
 
 ## Hat
 - **Black-hat**: Hacker che violano i sistemi informatici per scopi personali o criminali. Rubano informazioni e spesso le rivendono a paesi stranieri. Agiscono deliberatamente sul “lato oscuro” dell'hacking.
